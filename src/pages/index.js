@@ -24,7 +24,7 @@ class Home extends React.Component {
                             </div>
                             <div className="col-lg-3 col-md-4 col-sm-7 col-8">
                                 <div className="main-fade-in-animation-delay-1">
-                                  <StaticImage width={300} height={300} quality={100} formats={["auto", "webp", "avif"]} className="main-fit-element main-circle" src="../img/portrait512.jpg" alt="Portrait" />
+                                  <StaticImage width={300} height={300} quality={95} formats={["auto", "webp", "avif"]} className="main-fit-element main-circle" src="../img/portrait512.jpg" alt="Portrait" />
                                 </div>
                             </div>
                         </div>
