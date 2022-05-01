@@ -16,10 +16,10 @@ class Home extends React.Component {
                     <div className="container h-100">
                         <div className="row h-50 justify-content-center">
                             <div className="col-lg-7 col-md-6">
-                                <h1 className="main-reveal-text-short">Hi, I'm Minh.<br />I do cybersecurity.</h1>
+                                <h1 className="main-reveal-text-short">Hi, I'm Nathan.<br />I'm a software developer.</h1>
                                 <div className="main-fade-in-animation">
-                                    <p>I am an 18 year old security researcher studying computer science at University of Illinois Urbana-Champaign.</p>
-                                    <p>In my free time, I play CTFs and code random things.</p>
+                                    <p>I'm a 23 year old computer science student at Washington State University.</p>
+                                    <p>In my free time, I do coding puzzles<br />and mess around with graphics programming.</p>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-4 col-sm-7 col-8">
