@@ -97,19 +97,19 @@ exports.createSchemaCustomization = ({ actions }) => {
       twitter: String
     }
 
+    type Fields {
+      slug: String
+    }
+
     type MarkdownRemark implements Node {
-      frontmatter: Frontmatter
       fields: Fields
+      frontmatter: Frontmatter
     }
 
     type Frontmatter {
       title: String
       description: String
       date: Date @dateformat
-    }
-
-    type Fields {
-      slug: String
     }
   `)
 }

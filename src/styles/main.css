@@ -7,8 +7,8 @@
     --color-text: #3c3836;
     --color-title: #504945;
     --color-title-inverse: #d5c4a1;
-    --color-primary: #076678;
-    --color-secondary: #458588;
+    --color-primary: #9d0006;
+    --color-secondary: #cc241d;
     --hr: hsla(0, 0%, 0%, 0.2);
 }
 .dark-mode {
@@ -39,6 +39,9 @@ h1 {
     margin-left: 0;
     margin-right: 0;
     font-weight: bold;
+}
+.prim-color {
+    color: var(--color-primary);
 }
 body {
     background-color: var(--color-background);
@@ -539,7 +542,43 @@ code[class*="language-"], pre[class*="language-"] {
 	60% {transform: scaleX(1);}
 	100% {transform: scaleX(0);}
 }
-
+.animate-left {
+    position:relative;
+    animation:animateleft 0.4s
+}
+@keyframes animateleft {
+    from {
+        left:-300px;opacity:0
+    } to {
+        left:0;opacity:1
+    }
+}
+.animate-right {
+    position:relative;
+    animation:animateright 0.4s
+}
+@keyframes animateright {
+    from { 
+        right:-300px;
+        opacity:0 
+    } to {
+        right:0;
+        opacity:1
+    }
+}
+.animate-bottom {
+    position:relative;
+    animation:animatebottom 0.4s
+}
+@keyframes animatebottom {
+    from {
+        bottom:-300px;
+        opacity:0
+    } to {
+        bottom:0;
+        opacity:1
+    }
+}
 /* Change null to * for debugging */
 null {
     background: #000 !important;
