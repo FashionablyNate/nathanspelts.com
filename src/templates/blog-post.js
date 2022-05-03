@@ -30,7 +30,7 @@ const BlogPostTemplate = ({ data, location }) => {
               </div>
               <div className="col-md-10 col-xl-8">
                 <p className="m-0 main-fade-in-animation">
-                  <Link to="/posts"><strong>← All Posts</strong></Link>
+                  <Link to="/blog"><strong>← All Posts</strong></Link>
                 </p>
                 <article id="post-content" itemScope itemType="http://schema.org/Article">
                   <header>
