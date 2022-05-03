@@ -62,4 +62,4 @@ This part was my favorite because it was so simple. Once I had collisions and dr
 
 *A demonstration of birds*
 
-I had a lot of fun with this project and learned a lot about working with others. I feel like I didn't get too technical with my explanations. If you think it was too technical or not technical enough, go ahead and send me an email and tell me about it! Even if you don't have a specific comment, I'd love to hear that someone actually read this and enjoyed it! Thanks for your time. :)
+I had a lot of fun with this project and learned a lot about working with others. I feel like I didn't get too technical with my explanations. If you think it was too technical or not technical enough, go ahead and send me an <a href="mailto: nate@nathanspelts.com">email</a> and tell me about it! Even if you don't have a specific comment, I'd love to hear that someone actually read this and enjoyed it! Thanks for your time. :)
