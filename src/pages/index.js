@@ -56,19 +56,19 @@ class Home extends React.Component {
                                 <div className="col-md-6 col-12">
                                     <div className="row justify-content-center">
                                         <div className="col-sm-2 col-5">
-                                            <StaticImage width={200} height={200} formats={["auto", "webp", "avif"]} className="main-badge" src="../img/c++.png" alt="CompTIA A+" />
+                                            <StaticImage width={200} height={200} formats={["auto", "webp", "avif"]} className="main-badge" src="../img/c++.png" alt="c++" />
                                         </div>
                                         <div className="col-sm-2 col-5">
-                                            <StaticImage width={200} height={200} formats={["auto", "webp", "avif"]} className="main-badge" src="../img/java.png" alt="CompTIA A+" />
+                                            <StaticImage width={200} height={200} formats={["auto", "webp", "avif"]} className="main-badge" src="../img/java.png" alt="java" />
                                         </div>
                                         <div className="col-sm-2 col-5">
-                                            <StaticImage width={200} height={200} formats={["auto", "webp", "avif"]} className="main-badge" src="../img/rust.png" alt="CompTIA Network+" />
+                                            <StaticImage width={200} height={200} formats={["auto", "webp", "avif"]} className="main-badge" src="../img/rust.png" alt="rust" />
                                         </div>
                                         <div className="col-sm-2 col-5">
-                                            <StaticImage width={200} height={200} formats={["auto", "webp", "avif"]} className="main-badge" src="../img/js.png" alt="CompTIA A+" />
+                                            <StaticImage width={200} height={200} formats={["auto", "webp", "avif"]} className="main-badge" src="../img/js.png" alt="js" />
                                         </div>
                                         <div className="col-sm-2 col-5">
-                                            <StaticImage width={200} height={200} formats={["auto", "webp", "avif"]} className="main-badge" src="../img/python.png" alt="CompTIA A+" />
+                                            <StaticImage width={200} height={200} formats={["auto", "webp", "avif"]} className="main-badge" src="../img/python.png" alt="python" />
                                         </div>
                                     </div>
                                 </div>
