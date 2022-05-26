@@ -12,7 +12,7 @@ class Footer extends React.Component {
                                 <a className="mx-2" aria-label="GitLab" target="_blank" rel="noopener noreferrer" href="https://gitlab.com/nspelts">
                                 <svg className="main-social-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 500 500">
                                     <path id="Imported Path"
-                                            fill="true" stroke="black" stroke-width="1"
+                                            fill="true" stroke="black" strokeWidth="1"
                                             d="M 467.60,197.70
                                             C 467.60,197.70 340.50,197.70 340.50,197.70
                                                 340.50,197.70 395.10,29.60 395.10,29.60
