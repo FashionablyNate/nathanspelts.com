@@ -10,8 +10,8 @@ const Game = ({ children }) => {
     if (inView) {
         return (
             <div ref={ref}>
-                {main()}
                 {children}
+                {main()}
             </div>
         )
     } else {
