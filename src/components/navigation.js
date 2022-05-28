@@ -18,7 +18,7 @@ class Navigation extends React.Component {
                         <Link className="nav-link" to="/">Home</Link>
                         <Link className="nav-link" to="/blog">Blog</Link>
                         <Link className="nav-link" to="/contact">Contact</Link>
-                        <Link className="nav-link" to="./particle-simulator.html">Particle-Simulator</Link>
+                        <Link className="nav-link" to="https://nathanspelts.com/particle-simulator/">Particle-Simulator</Link>
                         <DarkModeToggle />
                     </div>
                 </nav>
