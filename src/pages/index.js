@@ -6,6 +6,7 @@ import RevealAnimation from "../components/reveal-animation"
 import Layout from "../components/layout"
 import Footer from "../components/footer"
 import LatestPost from "../components/latest-post"
+import Seo from "../components/seo"
 import { Link } from "gatsby"
 
 class Home extends React.Component {
@@ -13,6 +14,8 @@ class Home extends React.Component {
         return (
           <Layout>
             <div className="main-page h-100">
+                <Seo title="Home" description="I'm a 23 year old computer science student at Washington State University. In my free time, I do coding puzzles and mess around with graphics programming."
+                    image="../img/Spelts_logo.png" />
                 <section id="intro" className="container-fluid main-mh-100 mb-5">
                     <NavigationSpacer />
                     <div className="container h-100">

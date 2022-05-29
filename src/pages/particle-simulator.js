@@ -22,7 +22,8 @@ class ParticleSimulator extends React.Component {
                                         <canvas id="glcanvas" width="600" height="450"/>
                                         <div id="SelectionDisplay1">no script  has run</div>
                                         <div id="SelectionDisplay2">no script  has run</div>
-                                        <p>'Q' for Particle, 'W' for Water</p>
+                                        <p>'Q' for Particle, 'W' for Water, 'E' for Lava <br/>
+                                        'A' for Steam, 'S' for Stone</p>
                                         <Game />
                                     </div>
                                 </div>
