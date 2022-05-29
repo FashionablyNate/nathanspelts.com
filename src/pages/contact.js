@@ -10,7 +10,7 @@ class Contact extends React.Component {
         return (
             <Layout>
                 <div className="main-page h-100">
-                    <Seo title="Contact" description="Contact page for Nathan Spelts." />
+                    <Seo title="Contact Nathan Spelts" description="A page to help you get in touch with Nathan Spelts." />
                     <div className="container-fluid d-flex flex-column main-mh-100">
                         <NavigationSpacer />
                         <div className="container flex-grow-1">
