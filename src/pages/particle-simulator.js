@@ -79,6 +79,18 @@ class ParticleSimulator extends React.Component {
                                             </div>
                                             <div className="row">
                                                 <div>
+                                                    <strong className="prim-color">X-Pos:</strong>
+                                                    <span id="SelectionDisplay5">no script  has run</span>
+                                                </div>
+                                            </div>
+                                            <div className="row">
+                                                <div>
+                                                    <strong className="prim-color">Y-Pos:</strong>
+                                                    <span id="SelectionDisplay6">no script  has run</span>
+                                                </div>
+                                            </div>
+                                            <div className="row">
+                                                <div>
                                                     <Modal />
                                                 </div>
                                             </div>

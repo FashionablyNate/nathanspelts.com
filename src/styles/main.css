@@ -600,6 +600,10 @@ code[class*="language-"], pre[class*="language-"] {
     float: right;
 }
 
+#div1 {
+    cursor: none;
+}
+
 /* Change null to * for debugging */
 null {
     background: #000 !important;
