@@ -5,7 +5,6 @@ import NavigationSpacer from "../components/navigation-spacer"
 import Seo from "../components/seo"
 import Layout from "../components/layout"
 import Game from "../components/game"
-import { Helmet } from "react-helmet"
 import Modal from "../components/modal"
 
 class ParticleSimulator extends React.Component {
@@ -23,29 +22,29 @@ class ParticleSimulator extends React.Component {
                                     <div id="div1" className="main-fade-in-animation">
                                         <canvas id="glcanvas" width="600" height="450"/>
                                         <Game />
-                                        <div class="row" align="center">
-                                            <div class="col">
-                                                <a id="sand-select" class="btn naked large">Sand</a>
+                                        <div className="row" align="center">
+                                            <div className="col">
+                                                <button id="sand-select" className="btn naked large">Sand</button>
                                             </div>
-                                            <div class="col">
-                                                <a id="water-select" class="btn naked large">Water</a>        
+                                            <div className="col">
+                                                <button id="water-select" className="btn naked large">Water</button>        
                                             </div>
-                                            <div class="col">
-                                                <a id="lava-select" class="btn naked large">Lava</a>        
+                                            <div className="col">
+                                                <button id="lava-select" className="btn naked large">Lava</button>        
                                             </div>
-                                            <div class="col">
-                                                <a id="steam-select" class="btn naked large">Steam</a>        
+                                            <div className="col">
+                                                <button id="steam-select" className="btn naked large">Steam</button>        
                                             </div>
                                         </div>
-                                        <div class="row" align="center">
-                                            <div class="col">
-                                                <a id="stone-select" class="btn naked large">Stone</a>
+                                        <div className="row" align="center">
+                                            <div className="col">
+                                                <button id="stone-select" className="btn naked large">Stone</button>
                                             </div>
-                                            <div class="col">
+                                            <div className="col">
                                             </div>
-                                            <div class="col">
+                                            <div className="col">
                                             </div>
-                                            <div class="col">
+                                            <div className="col">
                                             </div>
                                         </div>
                                     </div>
@@ -54,31 +53,31 @@ class ParticleSimulator extends React.Component {
                                     <p><br/><br/></p>
                                     <div className="main-fade-in-animation-delay-1">
                                         <div className="main-fade-in-animation">
-                                            <div class="row">
+                                            <div className="row">
                                                 <div>
                                                     <strong className="prim-color">Particles:</strong>
                                                     <span id="SelectionDisplay1">no script  has run</span>
                                                 </div>
                                             </div>
-                                            <div class="row">
+                                            <div className="row">
                                                 <div>
                                                     <strong className="prim-color">FPS:</strong>
                                                     <span id="SelectionDisplay2">no script  has run</span>
                                                 </div>
                                             </div>
-                                            <div class="row">
+                                            <div className="row">
                                                 <div>
                                                     <strong className="prim-color">Select:</strong>
                                                     <span id="SelectionDisplay3">no script  has run</span>
                                                 </div>
                                             </div>
-                                            <div class="row">
+                                            <div className="row">
                                                 <div>
                                                     <strong className="prim-color">Speed:</strong>
                                                     <span id="SelectionDisplay4">no script  has run</span>
                                                 </div>
                                             </div>
-                                            <div class="row">
+                                            <div className="row">
                                                 <div>
                                                     <Modal />
                                                 </div>

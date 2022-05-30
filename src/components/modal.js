@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import ReactModal from 'react-modal'
 import RevealAnimation from './reveal-animation'
-import { StaticImage } from 'gatsby-plugin-image'
-import { Link } from 'gatsby'
 
 const customStyles = {
     content: {
@@ -51,7 +49,7 @@ class Modal extends Component {
     return (
         <div>
             <div>
-                <button class="naked" onClick={this.handleModalOpen}>
+                <button className="naked" onClick={this.handleModalOpen}>
                     <span>Further Information</span>
                 </button>
             </div>
@@ -64,7 +62,7 @@ class Modal extends Component {
                                     <RevealAnimation animationClass="main-reveal-text">
                                         <p className="h5 card-title">
                                             <span id="title" className="prim-color">Particle-Simulator</span>
-                                            <button class="btn naked large float-right" onClick={this.handleModalClose}>
+                                            <button className="btn naked large float-right" onClick={this.handleModalClose}>
                                                 <span className="h3">&times;</span>
                                             </button>
                                         </p>
