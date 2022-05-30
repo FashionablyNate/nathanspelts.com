@@ -594,6 +594,10 @@ code[class*="language-"], pre[class*="language-"] {
     text-decoration:underline;
 }
 
+.float-right {
+    float: right;
+}
+
 /* Change null to * for debugging */
 null {
     background: #000 !important;

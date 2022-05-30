@@ -21,6 +21,7 @@ class ParticleSimulator extends React.Component {
                                 <div className="col-md-7">
                                     <h1 className="prim-color main-reveal-text-short mt-0">Particle Simulator</h1>
                                     <div id="div1" className="main-fade-in-animation">
+                                        <span>v1.0.2</span>
                                         <canvas id="glcanvas" width="600" height="450"/>
                                         <Game />
                                     </div>
