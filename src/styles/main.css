@@ -582,12 +582,13 @@ code[class*="language-"], pre[class*="language-"] {
 
 .naked {    
     background:none;
-    color:black;
+    color: var(--color-primary);
     font-weight:bold;
     transition:0.3s;
     opacity:1;
 }
 .naked:hover {
+    color: var(--color-primary);
     opacity:0.6;
     transition:0.3s;
     text-decoration:underline;

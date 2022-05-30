@@ -42,43 +42,6 @@ class Home extends React.Component {
                         </div>
                     </div>
                 </section>
-                <section id="skills" className="container-fluid mb-5">
-                    <div className="container">
-                        <div className="row justify-content-center">
-                            <div className="col-md-10 ">
-                                <RevealAnimation animationClass="main-reveal-text">
-                                    <h1 className="prim-color">Programming Language Experience</h1>
-                                </RevealAnimation>
-                                <RevealAnimation animationClass="main-reveal-text-reverse">
-                                    <p>I've tackled moderate to large scale projects in the following languages.</p>
-                                </RevealAnimation>
-                            </div>
-                        </div>
-                        <RevealAnimation animationClass="main-fade-in-animation">
-                            <div className="row align-items-center justify-content-center">
-                                <div className="col-md-6 col-12">
-                                    <div className="row justify-content-center">
-                                        <div className="col-sm-2 col-5">
-                                            <StaticImage width={200} height={200} formats={["auto", "webp", "avif"]} className="main-badge" src="../img/c++.png" alt="c++" />
-                                        </div>
-                                        <div className="col-sm-2 col-5">
-                                            <StaticImage width={200} height={200} formats={["auto", "webp", "avif"]} className="main-badge" src="../img/java.png" alt="java" />
-                                        </div>
-                                        <div className="col-sm-2 col-5">
-                                            <StaticImage width={200} height={200} formats={["auto", "webp", "avif"]} className="main-badge" src="../img/rust.png" alt="rust" />
-                                        </div>
-                                        <div className="col-sm-2 col-5">
-                                            <StaticImage width={200} height={200} formats={["auto", "webp", "avif"]} className="main-badge" src="../img/js.png" alt="js" />
-                                        </div>
-                                        <div className="col-sm-2 col-5">
-                                            <StaticImage width={200} height={200} formats={["auto", "webp", "avif"]} className="main-badge" src="../img/python.png" alt="python" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </RevealAnimation>
-                    </div>
-                </section>
                 <section id="experiences" className="container-fluid mb-5">
                     <div className="container">
                         <div className="row justify-content-center">
@@ -88,6 +51,26 @@ class Home extends React.Component {
                                         <h1 className="prim-color">Programming Project Experience</h1>
                                     </RevealAnimation>
                                 </div>
+                            </div>
+                        </div>
+                        <div className="row justify-content-center mb-4">
+                            <div className="col-md-10">
+                                <RevealAnimation animationClass="main-fade-in-animation">
+                                    <div className="card main-box main-color-surface">
+                                        <div className="row align-items-center justify-content-center g-0">
+                                            <div className="col-md-7 order-md-2">
+                                                <div className="card-body">
+                                                    <p className="h5 card-title">Particle-Simulator</p>
+                                                    <p className="card-text">A web game built using WebGL and Javascript. Essentially a recreation of a previous group project (CANG Physics Engine). Except this time I had some more experience and greater creative control.</p>
+                                                    <p className="card-text m-0"><a aria-label="Webpage for Particle-Simulator" target="_blank" rel="noopener noreferrer" href="/particle-simulator">See webpage</a></p>
+                                                </div>
+                                            </div>
+                                            <div className="col-md-5 order-md-1">
+                                                <StaticImage width={1024} height={768} className="img-fluid main-rounded-start-lg" src="../img/particle-simulator.png" alt="a screenshot my particle simulator game." />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </RevealAnimation>
                             </div>
                         </div>
                         <div className="row justify-content-center mb-4">
@@ -119,7 +102,7 @@ class Home extends React.Component {
                                                 <div className="card-body">
                                                     <p className="h5 card-title">Django Blog</p>
                                                     <p className="card-text">A blog site built using the Django web framework. Complete with account login/registration, post creation/editing/deletion, and admin backend.</p>
-                                                    <p className="card-text m-0"><a aria-label="CANG Physics Engine Repository" target="_blank" rel="noopener noreferrer" href="https://blog.nathanspelts.com/">See website</a></p>
+                                                    <p className="card-text m-0"><a aria-label="Django Blog Website" target="_blank" rel="noopener noreferrer" href="https://blog.nathanspelts.com/">See website</a></p>
                                                 </div>
                                             </div>
                                             <div className="col-md-5 order-md-1">
@@ -161,7 +144,7 @@ class Home extends React.Component {
                                     <ul>
                                         <li>Associates of Science with Honors</li>
                                         <li>3.8 GPA</li>
-                                        <li>Junior at Washington State University Vancouver</li>
+                                        <li>Senior at Washington State University Vancouver</li>
                                     </ul>
                                 </RevealAnimation>
                             </div>

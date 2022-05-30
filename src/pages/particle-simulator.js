@@ -5,6 +5,8 @@ import NavigationSpacer from "../components/navigation-spacer"
 import Seo from "../components/seo"
 import Layout from "../components/layout"
 import Game from "../components/game"
+import { Helmet } from "react-helmet"
+import Modal from "../components/modal"
 
 class ParticleSimulator extends React.Component {
     render() {
@@ -55,6 +57,7 @@ class ParticleSimulator extends React.Component {
                                         <br/><strong className="prim-color">A</strong> for Steam, 
                                         <br/><strong className="prim-color">S</strong> for Stone
                                         <br/></p>
+                                        <Modal />
                                     </div>
                                 </div>
                             </div>
@@ -62,7 +65,7 @@ class ParticleSimulator extends React.Component {
                         <Footer />
                     </div>
                 </div>
-            </Layout>            
+            </Layout>
         )
     }
 }
