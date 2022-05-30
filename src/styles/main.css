@@ -586,6 +586,8 @@ code[class*="language-"], pre[class*="language-"] {
     font-weight:bold;
     transition:0.3s;
     opacity:1;
+    border:0;
+    padding:0;
 }
 .naked:hover {
     color: var(--color-primary);

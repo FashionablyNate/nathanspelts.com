@@ -6,13 +6,18 @@ import { Link } from 'gatsby'
 
 const customStyles = {
     content: {
-        padding: '0',
+        left: '10%',
+        right: '10%',
+        top: '10%',
+        bottom: '10%',
         background: '#00000000',
         border: '0px'
     },
     overlay: {
-        background: '#00000080'
+        background: '#00000080',
+        zIndex: '1000'
     },
+
 };
 
 class Modal extends Component {
@@ -24,20 +29,30 @@ class Modal extends Component {
   }
   handleModalOpen = event => {
     // console.log('handleModalOpen: ', event);
-    this.setState({ isModalOpen: true })
+    this.setState({ 
+        isModalOpen: true
+     }, () => {
+         this.windowOffset = window.scrollY
+         document.body.setAttribute('style', `position: fixed; top: -${this.windowOffset}px; left: 0; right: 0;`)
+     })
   }
 
   handleModalClose = event => {
     // console.log('handleModalOpen: ', event);
-    this.setState({ isModalOpen: false })
+    this.setState({
+        isModalOpen: false
+    }, () => {
+        document.body.setAttribute('style', '')
+        window.scrollTo(0, this.windowOffset)
+    })
   }
 
   render() {
     return (
         <div>
-            <div id="main">
-                <button class="btn naked large" onClick={this.handleModalOpen}>
-                    <span>Info</span>
+            <div>
+                <button class="naked" onClick={this.handleModalOpen}>
+                    <span>Further Information</span>
                 </button>
             </div>
             <ReactModal isOpen={this.state.isModalOpen} onRequestClose={this.handleModalClose} contentLabel="Example Modal In Gatsby" style={customStyles}>
@@ -48,16 +63,26 @@ class Modal extends Component {
                                 <div className="card-body">
                                     <RevealAnimation animationClass="main-reveal-text">
                                         <p className="h5 card-title">
-                                            <span className="prim-color">Particle-Simulator</span>
+                                            <span id="title" className="prim-color">Particle-Simulator</span>
                                             <button class="btn naked large float-right" onClick={this.handleModalClose}>
                                                 <span className="h3">&times;</span>
                                             </button>
                                         </p>
                                     </RevealAnimation>
                                     <RevealAnimation animationClass="main-fade-in-animation">
+                                        <span>v1.1.0</span>
                                         <p className="card-text"><strong>Description:</strong> A physics simulator built using WebGL and Javascript. Essentially a recreation of a previous group project (CANG Physics Engine). Except this time I had some more experience and greater creative control.</p>
                                         <p className="card-text"><strong>Source Code:</strong> The source code for this project is available <a href="https://github.com/FashionablyNate/Particle-Simulator">here</a>. It is available under the MIT license.</p>
                                         <p className="card-text"><strong>Inspiration:</strong> This project was heavily inspired by Powder Game, created by ha55ii, which you can play <a href="https://dan-ball.jp/en/javagame/dust/">here</a>.</p>
+                                        <p className="card-text"><strong>Shortcuts:</strong>
+                                            <p>
+                                                <strong>Q</strong> - Sand<br/>
+                                                <strong>W</strong> - Water<br/>
+                                                <strong>E</strong> - Lava<br/>
+                                                <strong>A</strong> - Steam<br/>
+                                                <strong>S</strong> - Stone<br/>
+                                            </p>
+                                        </p>
                                         <p className="h5 card-title">
                                             <span className='prim-color'>Changelog</span>
                                         </p>
