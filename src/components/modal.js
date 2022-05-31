@@ -68,7 +68,7 @@ class Modal extends Component {
                                         </p>
                                     </RevealAnimation>
                                     <RevealAnimation animationClass="main-fade-in-animation">
-                                        <span>v1.1.0</span>
+                                        <span>v1.2.0</span>
                                         <p className="card-text"><strong>Description:</strong> A physics simulator built using WebGL and Javascript. Essentially a recreation of a previous group project (CANG Physics Engine). Except this time I had some more experience and greater creative control.</p>
                                         <p className="card-text"><strong>Source Code:</strong> The source code for this project is available <a href="https://github.com/FashionablyNate/Particle-Simulator">here</a>. It is available under the MIT license.</p>
                                         <p className="card-text"><strong>Inspiration:</strong> This project was heavily inspired by Powder Game, created by ha55ii, which you can play <a href="https://dan-ball.jp/en/javagame/dust/">here</a>.</p>
@@ -79,10 +79,23 @@ class Modal extends Component {
                                                 <strong>E</strong> - Lava<br/>
                                                 <strong>A</strong> - Steam<br/>
                                                 <strong>S</strong> - Stone<br/>
+                                                <strong>D</strong> - Border<br/>
+                                                <strong>1</strong> - Brush-Decrease<br/>
+                                                <strong>2</strong> - Brush-Increase<br/>
                                             </p>
                                         </p>
                                         <p className="h5 card-title">
                                             <span className='prim-color'>Changelog</span>
+                                        </p>
+                                        <p className="card-text">
+                                            <strong>v1.2.0</strong>
+                                            <ul>
+                                                <li>Added eraser</li>
+                                                <li>Added brush-size</li>
+                                                <li>Added pointer</li>
+                                                <li>Added density</li>
+                                                <li>Border is now a drawable type</li>
+                                            </ul>
                                         </p>
                                         <p className="card-text">
                                             <strong>v1.1.0</strong>
