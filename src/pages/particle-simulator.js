@@ -6,6 +6,7 @@ import Seo from "../components/seo"
 import Layout from "../components/layout"
 import Game from "../components/game"
 import Modal from "../components/modal"
+import { main } from "../Particle-Simulator/src/main"
 
 class ParticleSimulator extends React.Component {
     render() {
@@ -16,11 +17,15 @@ class ParticleSimulator extends React.Component {
                     <div className="container-fluid d-flex flex-column main-mh-100">
                         <NavigationSpacer />
                         <div className="container flex-grow-1">
+                            <div className="row col-lg-auto">
+                                <h1 className="prim-color main-reveal-text-short mt-0">Particle Simulator</h1>
+                            </div>
                             <div className="row h-50 justify-content-center">
-                                <div className="col-lg-auto">
-                                    <h1 className="prim-color main-reveal-text-short mt-0">Particle Simulator</h1>
+                                <div className="col-lg-6">
                                     <div id="div1" className="main-fade-in-animation">
-                                        <canvas id="glcanvas" width="600" height="450"/>
+                                        <canvas
+                                            id="glcanvas"
+                                        />
                                         <Game />
                                     </div>
                                     <p></p>
@@ -64,8 +69,8 @@ class ParticleSimulator extends React.Component {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-lg-auto">
-                                    <p><br/><br/></p>
+                                <div className="col-lg-4">
+                                    <p></p>
                                     <div className="main-fade-in-animation-delay-1">
                                         <div className="main-fade-in-animation">
                                             <div className="row">
