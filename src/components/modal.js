@@ -68,7 +68,7 @@ class Modal extends Component {
                                         </p>
                                     </RevealAnimation>
                                     <RevealAnimation animationClass="main-fade-in-animation">
-                                        <span>v1.2.0</span>
+                                        <span>v1.2.1</span>
                                         <p className="card-text"><strong>Description:</strong> A physics simulator built using WebGL and Javascript. Essentially a recreation of a previous group project (CANG Physics Engine). Except this time I had some more experience and greater creative control.</p>
                                         <p className="card-text"><strong>Source Code:</strong> The source code for this project is available <a href="https://github.com/FashionablyNate/Particle-Simulator">here</a>. It is available under the MIT license.</p>
                                         <p className="card-text"><strong>Inspiration:</strong> This project was heavily inspired by Powder Game, created by ha55ii, which you can play <a href="https://dan-ball.jp/en/javagame/dust/">here</a>.</p>
@@ -86,6 +86,12 @@ class Modal extends Component {
                                         </p>
                                         <p className="h5 card-title">
                                             <span className='prim-color'>Changelog</span>
+                                        </p>
+                                        <p className="card-text">
+                                            <strong>v1.2.1</strong>
+                                            <ul>
+                                                <li>Mobile friendly</li>
+                                            </ul>
                                         </p>
                                         <p className="card-text">
                                             <strong>v1.2.0</strong>
