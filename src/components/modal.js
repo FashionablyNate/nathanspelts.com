@@ -85,9 +85,12 @@ class Modal extends Component {
                                                 <strong>Q</strong> - Sand<br/>
                                                 <strong>W</strong> - Water<br/>
                                                 <strong>E</strong> - Lava<br/>
+                                                <strong>R</strong> - Seed<br/>
                                                 <strong>A</strong> - Steam<br/>
                                                 <strong>S</strong> - Stone<br/>
                                                 <strong>D</strong> - Border<br/>
+                                                <strong>F</strong> - Fire<br/>
+                                                <strong>X</strong> - Eraser<br/>
                                                 <strong>1</strong> - Brush-Decrease<br/>
                                                 <strong>2</strong> - Brush-Increase<br/>
                                             </p>
