@@ -24,54 +24,52 @@ const BlogIndex = ({ data, location }) => {
   }
 
   return (
-    <Layout location={location} title={siteTitle}>
-      <div className="main-page h-100">
-        <Seo title="All posts" />
-        <div className="container-fluid d-flex flex-column main-mh-100">
-          <NavigationSpacer />
-          <div className="container flex-grow-1">
-            <div className="row justify-content-center">
-              <div className="col-md-10 col-xl-8">
-                <ol style={{ listStyle: `none` }}>
-                  {posts.map(post => {
-                    const title = post.frontmatter.title || post.fields.slug
+    <div className="main-page h-100">
+      <Seo title="All posts" />
+      <div className="container-fluid d-flex flex-column main-mh-100">
+        <NavigationSpacer />
+        <div className="container flex-grow-1">
+          <div className="row justify-content-center">
+            <div className="col-md-10 col-xl-8">
+              <ol style={{ listStyle: `none` }}>
+                {posts.map(post => {
+                  const title = post.frontmatter.title || post.fields.slug
 
-                    return (
-                      <li key={post.fields.slug}>
-                        <article
-                          className="post-list-item"
-                          itemScope
-                          itemType="http://schema.org/Article"
-                        >
-                          <header>
-                            <h3 className="main-reveal-text-short d-block">
-                              <Link to={post.fields.slug} itemProp="url">
-                                <span itemProp="headline">{title}</span>
-                              </Link>
-                            </h3>
-                            <small className="main-fade-in-animation">{post.frontmatter.date}</small>
-                          </header>
-                          <section>
-                            <p
-                              dangerouslySetInnerHTML={{
-                                __html: post.frontmatter.description || post.excerpt,
-                              }}
-                              itemProp="description" className="main-fade-in-animation"
-                            />
-                          </section>
-                          <hr />
-                        </article>
-                      </li>
-                    )
-                  })}
-                </ol>
-              </div>
+                  return (
+                    <li key={post.fields.slug}>
+                      <article
+                        className="post-list-item"
+                        itemScope
+                        itemType="http://schema.org/Article"
+                      >
+                        <header>
+                          <h3 className="main-reveal-text-short d-block">
+                            <Link to={post.fields.slug} itemProp="url">
+                              <span itemProp="headline">{title}</span>
+                            </Link>
+                          </h3>
+                          <small className="main-fade-in-animation">{post.frontmatter.date}</small>
+                        </header>
+                        <section>
+                          <p
+                            dangerouslySetInnerHTML={{
+                              __html: post.frontmatter.description || post.excerpt,
+                            }}
+                            itemProp="description" className="main-fade-in-animation"
+                          />
+                        </section>
+                        <hr />
+                      </article>
+                    </li>
+                  )
+                })}
+              </ol>
             </div>
           </div>
-        <Footer />
         </div>
+      <Footer />
       </div>
-    </Layout>
+    </div>
   )
 }
 

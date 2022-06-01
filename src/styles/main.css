@@ -604,6 +604,11 @@ code[class*="language-"], pre[class*="language-"] {
     cursor: none;
 }
 
+#modal-exit {
+    position: absolute;
+    left: 90%;
+}
+
 /* Change null to * for debugging */
 null {
     background: #000 !important;

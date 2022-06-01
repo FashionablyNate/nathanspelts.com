@@ -4,10 +4,10 @@ import RevealAnimation from './reveal-animation'
 
 const customStyles = {
     content: {
-        left: '10%',
-        right: '10%',
-        top: '10%',
-        bottom: '10%',
+        left: '5%',
+        right: '5%',
+        top: '5%',
+        bottom: '5%',
         background: '#00000000',
         border: '0px'
     },
@@ -57,16 +57,24 @@ class Modal extends Component {
                 <div className="justify-content-center">
                     <div className="card main-box main-color-surface">
                         <div className="row align-items-center justify-content-center g-0">
-                            <div className="col-md-12 order-md-3">
+                            <div className="col-md-auto order-md-3">
                                 <div className="card-body">
-                                    <RevealAnimation animationClass="main-reveal-text">
-                                        <p className="h5 card-title">
-                                            <span id="title" className="prim-color">Particle-Simulator</span>
-                                            <button className="btn naked large float-right" onClick={this.handleModalClose}>
+                                    <div className="row">
+                                        <div className="col-md-auto">
+                                            <div className="d-inline-block">
+                                                <RevealAnimation animationClass="main-reveal-text">
+                                                    <h2 className="prim-color">
+                                                        Particle Simulator
+                                                    </h2>
+                                                </RevealAnimation>
+                                            </div>
+                                        </div>
+                                        <div id="modal-exit" className='col'>
+                                            <button className="btn naked large" onClick={this.handleModalClose}>
                                                 <span className="h3">&times;</span>
                                             </button>
-                                        </p>
-                                    </RevealAnimation>
+                                        </div>
+                                    </div>
                                     <RevealAnimation animationClass="main-fade-in-animation">
                                         <span>v1.2.1</span>
                                         <p className="card-text"><strong>Description:</strong> A physics simulator built using WebGL and Javascript. Essentially a recreation of a previous group project (CANG Physics Engine). Except this time I had some more experience and greater creative control.</p>

@@ -3,7 +3,6 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import NavigationSpacer from "../components/navigation-spacer"
 import RevealAnimation from "../components/reveal-animation"
-import Layout from "../components/layout"
 import Footer from "../components/footer"
 import LatestPost from "../components/latest-post"
 import Seo from "../components/seo"
@@ -12,7 +11,6 @@ import { Link } from "gatsby"
 class Home extends React.Component {
     render() {
         return (
-          <Layout>
             <div className="main-page h-100">
                 <Seo title="Nathan Spelts' Portfolio Site" description="I'm a 23 year old computer science student at Washington State University. In my free time, I do coding puzzles and mess around with graphics programming."
                     src="../img/Spelts_logo.png" width="300" height="300" />
@@ -166,7 +164,6 @@ class Home extends React.Component {
                 </section>
               <Footer />
             </div>
-          </Layout>
         )
     }
 }

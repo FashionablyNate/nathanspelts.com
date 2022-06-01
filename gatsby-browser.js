@@ -11,3 +11,6 @@ import "./src/styles/webgl.css"
 
 // Highlighting for code blocks
 import "prismjs/themes/prism.css"
+
+import customWrapPageElement from "./src/components/wrap-page-element"
+export const wrapPageElement = customWrapPageElement
