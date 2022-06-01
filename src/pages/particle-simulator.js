@@ -44,24 +44,32 @@ class ParticleSimulator extends React.Component {
                                     <div className="col">
                                         <button id="sand-select" className="btn naked large">Sand</button>
                                     </div>
+                                    <div className="col">
+                                        <button id="water-select" className="btn naked large">Water</button>
+                                    </div>
                                 </div>
                                 <div className="row" align="center">
                                     <div className="col">
-                                        <button id="water-select" className="btn naked large">Water</button>        
+                                        <button id="lava-select" className="btn naked large">Lava</button>        
                                     </div>
                                     <div className="col">
-                                        <button id="lava-select" className="btn naked large">Lava</button>        
+                                        <button id="seed-select" className="btn naked large">Seed</button>
                                     </div>
                                     <div className="col">
                                         <button id="steam-select" className="btn naked large">Steam</button>        
                                     </div>
                                     <div className="col">
-                                        <button id="stone-select" className="btn naked large">Stone</button>
+                                        <button id="stone-select" className="btn naked large">Stone</button>        
+                                    </div>
+                                    <div className="col">
+                                        <button id="border-select" className="btn naked large">Border</button>
                                     </div>
                                 </div>
                                 <div className="row" align="center">
                                     <div className="col">
-                                        <button id="border-select" className="btn naked large">Border</button>
+                                        <button id="fire-select" className="btn naked large">Fire</button>
+                                    </div>
+                                    <div className="col">
                                     </div>
                                     <div className="col">
                                     </div>
