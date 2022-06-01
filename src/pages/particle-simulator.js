@@ -27,9 +27,7 @@ class ParticleSimulator extends React.Component {
                         <div className="row h-50 justify-content-center">
                             <div className="col-lg-6">
                                 <div id="div1" className="main-fade-in-animation">
-                                    <canvas
-                                        id="glcanvas"
-                                    />
+                                    <canvas id="glcanvas"/>
                                     <Game />
                                 </div>
                                 <p></p>
